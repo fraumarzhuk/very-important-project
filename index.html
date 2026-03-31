@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pink Page</title>
+	<style>
+		:root {
+			--pink-bg: #ff8fc7;
+			--text: #2a1020;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100dvh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--pink-bg);
+			color: var(--text);
+			padding: 1rem;
+			font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+		}
+
+		.video-wrap {
+			width: min(92vw, 900px);
+			background: #ffffff;
+			border-radius: 16px;
+			overflow: hidden;
+			box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+		}
+
+		video {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="video-wrap">
+		<video autoplay muted playsinline loop controls>
+			<source src="src/media/video.mp4" type="video/mp4" />
+			Your browser does not support the video tag.
+		</video>
+	</div>
+</body>
+
+</html>
