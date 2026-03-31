@@ -56,13 +56,8 @@
 			const video = document.getElementById("hero-video");
 			if (!video) return;
 
-			try {
-				video.muted = false;
-				await video.play();
-			} catch {
-				video.muted = true;
-				await video.play().catch(() => { });
-			}
+			video.muted = false;
+			await video.play().catch(() => { });
 		});
 	</script>
 </body>
